@@ -5,11 +5,15 @@
 body {
     margin: 0px;
     font-family: "Arial";
-    cursor: pointer;
+    background-color: #f3f3f3;
 }
 
 ul{
     list-style: none;
+}
+
+.color{
+    background-color: #ffffff;
 }
 
 .wrapper {
@@ -20,11 +24,15 @@ ul{
 }
 
 .header{
-    margin: 15px;
+    padding: 15px 0px;
+}
+
+.picture{
+    padding-bottom: 10px;
 }
 
 .img{
-    margin: 31px 0px;
+    margin-bottom: 31px;
     column-gap: 10px;
 }
 
@@ -90,11 +98,12 @@ main{
 .menu p {
     background-color: #38930c;
     color: #fff;
-    padding: 20px 11px;
+    padding: 11px 20px;
     text-transform: uppercase;
 }
 
 .menu ul li a{
+    padding: 20px 11px;
     font-size: 14px;
     line-height: 30px;
     text-decoration: underline;
@@ -106,10 +115,15 @@ main{
     font-size: 24px;
     color: #39930d;
     font-weight: bold;
+    padding-bottom: 17px;
+}
+
+.main-text article{
+    margin-bottom: 17px;
+    justify-content: space-between;
 }
 
 .main-text p {
-
     max-width: 612px;
     font-size: 14px;
     line-height: 21px;
