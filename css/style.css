@@ -12,33 +12,50 @@ ul{
     list-style: none;
 }
 
+html {
+    font-size: 1px;
+}
+
 .color{
     background-color: #ffffff;
 }
 
 .wrapper {
-    padding: 0 15px;
+    padding: 0 15rem;
     margin: 0 auto;
-    max-width: 960px;
+    max-width: 960rem;
     box-sizing: border-box;
 }
 
-.header{
-    padding: 15px 0px;
+.logo,
+.contacts{
+    padding: 15rem 0rem;
 }
 
-.picture{
-    padding-bottom: 10px;
+.picture picture,
+.picture img{
+    width: 100%;
+    min-height: 200rem;
+    object-fit: cover;
+    object-position: 75%;
+    vertical-align: bottom;
+    
 }
 
 .img{
-    margin-bottom: 31px;
-    column-gap: 10px;
+    margin-bottom: 31rem;
+    column-gap: 10rem;
 }
 
-.flex-between{
+.img img{
+    padding: 10rem 0px;
+    width: 100%;
+}
+
+.flex-between {
+    flex-wrap: wrap;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .logo,
@@ -47,20 +64,20 @@ ul{
 }
 
 .logo p {
-    font-size: 14px;
+    font-size: 14rem;
     color: #5a5a5a;
 }
 
 .logo b {
     display: block;
-    font-size: 24px;
+    font-size: 24rem;
     text-transform: uppercase;
     color: #39930d;
     font-weight: bold;
 }
 
 .logo{
-    column-gap: 8px;
+    column-gap: 8rem;
 }
 
 .contacts img {
@@ -69,14 +86,14 @@ ul{
 
 
 .contacts, .contacts a {
-    font-size: 14px;
+    font-size: 14rem;
     color: #5a5a5a;
     font-weight: bold;
     text-align: right;
 }
 
 .contacts{
-    column-gap: 52px;
+    column-gap: 52rem;
 }
 
 .contacts a{
@@ -86,58 +103,58 @@ ul{
 
 .contacts p, 
 .contacts a{
-    column-gap: 10px;
+    column-gap: 10rem;
 
 }
 
 main{
-    padding-bottom: 46px;
+    padding-bottom: 46rem;
     
 }
 
 .menu p {
     background-color: #38930c;
     color: #fff;
-    padding: 11px 20px;
+    padding: 11rem 20rem;
     text-transform: uppercase;
 }
 
 .menu ul li a{
-    padding: 20px 11px;
-    font-size: 14px;
-    line-height: 30px;
+    padding: 20rem 11rem;
+    font-size: 14rem;
+    line-height: 30rem;
     text-decoration: underline;
     text-transform: uppercase;
     color: #343434;
 }
 
 .main-text h2 {
-    font-size: 24px;
+    font-size: 24rem;
     color: #39930d;
     font-weight: bold;
-    padding-bottom: 17px;
+    padding-bottom: 17rem;
 }
 
 .main-text article{
-    margin-bottom: 17px;
+    margin-bottom: 17rem;
     justify-content: space-between;
 }
 
 .main-text p {
-    max-width: 612px;
-    font-size: 14px;
-    line-height: 21px;
+    max-width: 612rem;
+    font-size: 14rem;
+    line-height: 21rem;
     color: #343434;
 }
 
 .footer {
     background-color: #38930c;
-    padding: 14px;
+    padding: 14rem;
     align-items: center;
 }
 
 .footer p{
-    font-size: 14px;
+    font-size: 14rem;
     color: #ffffff;
 }
 
@@ -145,6 +162,38 @@ main{
     color: #fff;
 }
 
-.footer ul{
-    column-gap: 11px;
+.social-networks li{
+    column-gap: 11rem;
+}
+
+
+@media screen and (min-width: 967px){
+    .flex-between {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 621px){
+    .contacts p  {
+        text-align: left;
+    }
+
+    .main{
+        flex-wrap: nowrap;
+    }
+}
+@media screen and (min-width: 1024px){
+    html {
+        font-size: 1px;
+    }
+}
+@media screen and (min-width: 1040px){
+    html {
+        font-size: 1.2px;
+    }
+}
+@media screen and (min-width: 2040px){
+    html {
+        font-size: 2px;
+    }
 }
