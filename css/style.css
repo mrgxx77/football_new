@@ -46,6 +46,7 @@ html {
     margin-bottom: 31rem;
     column-gap: 10rem;
     display: flex;
+    /* display: block; */
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -53,7 +54,7 @@ html {
 .img img{
     padding: 10rem 0px;
     width: 100%;
-    max-width: 225px;
+    /* max-width: 250px; */
 }
 
 .flex-between {
@@ -174,13 +175,18 @@ main{
 }
 
 .social-networks li{
-    column-gap: 11rem;
+    margin-right: 11rem;
 }
 
 
 @media screen and (min-width: 487px){
     .img{
         flex-wrap: nowrap;
+    }
+}
+@media screen and (min-width: 400px){
+    .footer{
+        justify-content: space-between;
     }
 }
 @media screen and (min-width: 621px){
