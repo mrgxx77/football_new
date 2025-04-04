@@ -45,13 +45,17 @@ html {
 .img{
     margin-bottom: 31rem;
     column-gap: 10rem;
-    display: flex;
-    /* display: block; */
     justify-content: center;
     flex-wrap: wrap;
+    display: flex;
+}
+
+.img picture{
+    width: 100%;
 }
 
 .img img{
+    display: block;
     padding: 10rem 0px;
     width: 100%;
     /* max-width: 250px; */
@@ -73,9 +77,6 @@ html {
     color: #5a5a5a;
 }
 
-.logo img{
-    padding-right: 60px;
-}
 
 .logo b {
     display: block;
@@ -126,7 +127,7 @@ main{
     padding: 11rem 20rem;
     /* padding-left: 0rem; */
     text-transform: uppercase;
-    width: 100%;
+    /* width: 100%; */
     font-size: 15rem;
 }
 
@@ -179,6 +180,11 @@ main{
 }
 
 
+@media screen and (max-width: 930px){
+    .menu{
+        /* width: 100%; */
+    }
+}
 @media screen and (min-width: 487px){
     .img{
         flex-wrap: nowrap;
